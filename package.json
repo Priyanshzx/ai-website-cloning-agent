@@ -1,0 +1,16 @@
+{
+  "name": "ai-website-cloning-agent",
+  "version": "1.0.0",
+  "description": "Autonomous AI Agent that recreates any public website frontend in React/Next.js and allows natural-language modifications.",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "start": "npm run start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "author": "Priyansh Yadav",
+  "license": "MIT"
+}

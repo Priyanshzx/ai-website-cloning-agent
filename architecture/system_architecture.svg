@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="600" y="55" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="800" text-anchor="middle" letter-spacing="1">
+    WebClone AI — Autonomous Frontend Re-Engineering Architecture
+  </text>
+  <text x="600" y="85" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="14" text-anchor="middle">
+    End-to-End Pipeline: URL Ingestion → Semantic Analysis → AI Synthesis → AST Validation → Sandbox & Modification
+  </text>
+
+  <!-- Step 1: Input & Ingestion -->
+  <g transform="translate(60, 130)" filter="url(#shadow)">
+    <rect width="190" height="340" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5"/>
+    <rect width="190" height="42" rx="16" fill="#1E293B"/>
+    <text x="95" y="27" fill="#60A5FA" font-family="sans-serif" font-size="13" font-weight="700" text-anchor="middle">1. INGESTION & CRAWL</text>
+    <circle cx="25" cy="21" r="5" fill="#3B82F6"/>
+    
+    <text x="20" y="70" fill="#F8FAFC" font-family="sans-serif" font-size="12" font-weight="600">• Public Website URL</text>
+    <text x="20" y="100" fill="#94A3B8" font-family="sans-serif" font-size="11">• Cheerio DOM Parser</text>
+    <text x="20" y="125" fill="#94A3B8" font-family="sans-serif" font-size="11">• CSS Stylesheet Crawl</text>
+    <text x="20" y="150" fill="#94A3B8" font-family="sans-serif" font-size="11">• Asset Path Resolver</text>
+    <text x="20" y="175" fill="#94A3B8" font-family="sans-serif" font-size="11">• Meta & Favicon Fetch</text>
+    <text x="20" y="210" fill="#F8FAFC" font-family="sans-serif" font-size="12" font-weight="600">Output Payload:</text>
+    <text x="20" y="235" fill="#38BDF8" font-family="monospace" font-size="10">Raw DOM Tree</text>
+    <text x="20" y="255" fill="#38BDF8" font-family="monospace" font-size="10">Image & SVG Links</text>
+    <text x="20" y="275" fill="#38BDF8" font-family="monospace" font-size="10">Computed CSS Vars</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 255 300 L 285 300" stroke="#6366F1" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="6,4"/>
+
+  <!-- Step 2: Semantic Analysis -->
+  <g transform="translate(290, 130)" filter="url(#shadow)">
+    <rect width="190" height="340" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5"/>
+    <rect width="190" height="42" rx="16" fill="#1E293B"/>
+    <text x="95" y="27" fill="#818CF8" font-family="sans-serif" font-size="13" font-weight="700" text-anchor="middle">2. SEMANTIC ANALYSIS</text>
+    <circle cx="25" cy="21" r="5" fill="#6366F1"/>
+    
+    <text x="20" y="70" fill="#F8FAFC" font-family="sans-serif" font-size="12" font-weight="600">• Design Token Engine</text>
+    <text x="20" y="95" fill="#94A3B8" font-family="sans-serif" font-size="11">• Hex Palette Extract</text>
+    <text x="20" y="120" fill="#94A3B8" font-family="sans-serif" font-size="11">• Typography Scales</text>
+    <text x="20" y="145" fill="#94A3B8" font-family="sans-serif" font-size="11">• Section Classifier</text>
+    <text x="20" y="170" fill="#94A3B8" font-family="sans-serif" font-size="11">• Navigation Mapping</text>
+    <text x="20" y="210" fill="#F8FAFC" font-family="sans-serif" font-size="12" font-weight="600">Output Blueprint:</text>
+    <text x="20" y="235" fill="#A5B4FC" font-family="monospace" font-size="10">Primary/Secondary Hex</text>
+    <text x="20" y="255" fill="#A5B4FC" font-family="monospace" font-size="10">8 Modular Blueprints</text>
+    <text x="20" y="275" fill="#A5B4FC" font-family="monospace" font-size="10">Breakpoint Specs</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M 485 300 L 515 300" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="6,4"/>
+
+  <!-- Step 3: Dual AI Synthesis -->
+  <g transform="translate(520, 130)" filter="url(#shadow)">
+    <rect width="200" height="340" rx="16" fill="url(#cardGrad)" stroke="#6366F1" stroke-width="2"/>
+    <rect width="200" height="42" rx="16" fill="url(#primaryGrad)"/>
+    <text x="100" y="27" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="700" text-anchor="middle">3. DUAL AI SYNTHESIZER</text>
+    <circle cx="25" cy="21" r="5" fill="#FFFFFF"/>
+    
+    <text x="20" y="70" fill="#F8FAFC" font-family="sans-serif" font-size="12" font-weight="600">• Engine A: LLM Adapter</text>
+    <text x="20" y="95" fill="#94A3B8" font-family="sans-serif" font-size="11">Google Gemini 1.5</text>
+    <text x="20" y="115" fill="#94A3B8" font-family="sans-serif" font-size="11">OpenAI GPT-4o</text>
+    <text x="20" y="145" fill="#F8FAFC" font-family="sans-serif" font-size="12" font-weight="600">• Engine B: Heuristic</text>
+    <text x="20" y="170" fill="#34D399" font-family="sans-serif" font-size="11">Instant Deterministic</text>
+    <text x="20" y="190" fill="#34D399" font-family="sans-serif" font-size="11">Zero-Token Cost</text>
+    <text x="20" y="225" fill="#F8FAFC" font-family="sans-serif" font-size="12" font-weight="600">Generated Codebase:</text>
+    <text x="20" y="250" fill="#E2E8F0" font-family="monospace" font-size="10">App.tsx, Navbar.tsx</text>
+    <text x="20" y="270" fill="#E2E8F0" font-family="monospace" font-size="10">Hero.tsx, Features.tsx</text>
+    <text x="20" y="290" fill="#E2E8F0" font-family="monospace" font-size="10">Pricing.tsx, Footer.tsx</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <path d="M 725 300 L 755 300" stroke="#10B981" stroke-width="3" stroke-dasharray="6,4"/>
+
+  <!-- Step 4: Validation & Auto-Healing -->
+  <g transform="translate(760, 130)" filter="url(#shadow)">
+    <rect width="180" height="340" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5"/>
+    <rect width="180" height="42" rx="16" fill="#1E293B"/>
+    <text x="90" y="27" fill="#34D399" font-family="sans-serif" font-size="13" font-weight="700" text-anchor="middle">4. AST AUTO-HEAL</text>
+    <circle cx="25" cy="21" r="5" fill="#10B981"/>
+    
+    <text x="20" y="70" fill="#F8FAFC" font-family="sans-serif" font-size="12" font-weight="600">• AST Syntax Validator</text>
+    <text x="20" y="95" fill="#94A3B8" font-family="sans-serif" font-size="11">• Void Tag Healing</text>
+    <text x="20" y="120" fill="#94A3B8" font-family="sans-serif" font-size="11">• JSX Attribute Fix</text>
+    <text x="20" y="145" fill="#94A3B8" font-family="sans-serif" font-size="11">• React Import Inject</text>
+    <text x="20" y="170" fill="#94A3B8" font-family="sans-serif" font-size="11">• Tag & Bracket Parity</text>
+    <text x="20" y="210" fill="#F8FAFC" font-family="sans-serif" font-size="12" font-weight="600">Verification State:</text>
+    <text x="20" y="235" fill="#6EE7B7" font-family="monospace" font-size="10">100% Valid TSX</text>
+    <text x="20" y="255" fill="#6EE7B7" font-family="monospace" font-size="10">Zero Syntax Faults</text>
+    <text x="20" y="275" fill="#6EE7B7" font-family="monospace" font-size="10">Clean React 18 AST</text>
+  </g>
+
+  <!-- Arrow 4 -->
+  <path d="M 945 300 L 975 300" stroke="#F59E0B" stroke-width="3" stroke-dasharray="6,4"/>
+
+  <!-- Step 5: Live Studio Workbench -->
+  <g transform="translate(980, 130)" filter="url(#shadow)">
+    <rect width="160" height="340" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5"/>
+    <rect width="160" height="42" rx="16" fill="#1E293B"/>
+    <text x="80" y="27" fill="#FBBF24" font-family="sans-serif" font-size="13" font-weight="700" text-anchor="middle">5. LIVE WORKBENCH</text>
+    <circle cx="20" cy="21" r="5" fill="#F59E0B"/>
+    
+    <text x="15" y="70" fill="#F8FAFC" font-family="sans-serif" font-size="12" font-weight="600">• Responsive Sandbox</text>
+    <text x="15" y="95" fill="#94A3B8" font-family="sans-serif" font-size="11">Desktop (1440px)</text>
+    <text x="15" y="115" fill="#94A3B8" font-family="sans-serif" font-size="11">Tablet (768px)</text>
+    <text x="15" y="135" fill="#94A3B8" font-family="sans-serif" font-size="11">Mobile (375px)</text>
+    <text x="15" y="165" fill="#F8FAFC" font-family="sans-serif" font-size="12" font-weight="600">• Comparison Mode</text>
+    <text x="15" y="195" fill="#F8FAFC" font-family="sans-serif" font-size="12" font-weight="600">• 1-Click ZIP Export</text>
+    <text x="15" y="235" fill="#FCD34D" font-family="monospace" font-size="10">Standalone Vite</text>
+    <text x="15" y="255" fill="#FCD34D" font-family="monospace" font-size="10">Production Ready</text>
+  </g>
+
+  <!-- Bottom Feedback Loop: Natural Language Modification -->
+  <g transform="translate(290, 520)" filter="url(#shadow)">
+    <rect width="660" height="130" rx="16" fill="#1E1B4B" stroke="#6366F1" stroke-width="2"/>
+    <text x="330" y="32" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="800" text-anchor="middle">
+      6. NATURAL-LANGUAGE MODIFICATION LOOP (AI PROMPTS)
+    </text>
+    <text x="30" y="65" fill="#C7D2FE" font-family="monospace" font-size="11">
+      "Replace the hero section with a bakery hero" ➔ Dynamically regenerates Hero.tsx
+    </text>
+    <text x="30" y="88" fill="#C7D2FE" font-family="monospace" font-size="11">
+      "Change primary color to blue" ➔ Mutates theme color tokens across all components
+    </text>
+    <text x="30" y="111" fill="#C7D2FE" font-family="monospace" font-size="11">
+      "Make navbar sticky" / "Remove pricing section" ➔ Updates AST &amp; re-renders in &lt;150ms
+    </text>
+  </g>
+
+  <!-- Bidirectional connection between Studio and Modifier -->
+  <path d="M 1060 475 L 1060 585 L 955 585" fill="none" stroke="#A855F7" stroke-width="2.5" stroke-dasharray="5,5"/>
+  <path d="M 290 585 L 200 585 L 200 370" fill="none" stroke="#6366F1" stroke-width="2.5" stroke-dasharray="5,5"/>
+</svg>
